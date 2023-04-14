@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+      <div class="bg-secondary text-white container py-5 my-5 shadow rounded opacity-75 ">
+        <!-- <div class="container w-50 shadow my-5 py-5 rounded" >
+          <h1>CRUproductPriceD system</h1>
+          <div class="position-relative">
+            <label>productName:</label>
+            <input id="productName" type="text" class="form-control  my-2">
+            <span class="icon"  id="sus-0"><i class="fas fa-check-circle text-success "></i></span>
+            <span class="icon" id="err-0"><i class="fas fa-exclamation-circle text-danger" ></i></span>
+          </div>
+          <div class="position-relative"> 
+            <label>productCategory:</label>
+            <input id="productCategory" type="text" class="form-control my-2">
+            <span class="icon" id="sus-1"><i class="fas fa-check-circle text-success"></i></span>
+            <span class="icon" id="err-1"><i class="fas fa-exclamation-circle text-danger" ></i></span>
+          </div>
+          <div class="position-relative">
+            <label>productPrice:</label>
+            <input id="productPrice" type="text" class="form-control my-2">
+            <span class="icon" id="sus-2"><i class="fas fa-check-circle text-success"></i></span>
+            <span class="icon" id="err-2"><i class="fas fa-exclamation-circle text-danger" ></i></span>
+          </div>
+          <div class="position-relative">
+            <label>productDescription:</label>
+            <textarea id="productDescription" class="form-control my-2"></textarea>
+            <span class="icon" id="sus-3"><i class="fas fa-check-circle text-success"></i></span>
+            <span class="icon" id="err-3"><i class="fas fa-exclamation-circle text-danger" ></i></span>
+          </div>
+          <button id="update" class="btn btn-outline-dark my-3 " onclick="addProducts()">add product</button>
+          <button class="btn btn-outline-dark my-3" onclick="clearproduct()">clear</button>
+          <p class="error-0 text-danger"></p>
+        </div> -->
+        <h1 class="text-center mb-4">CRUD productPrice system</h1>
+        <button id="" class="btn btn-outline-info d-grid gap-2 col-3 mx-auto my-3 " onclick="details()">Add product +</button>
+        <input  onkeyup="search(this.value)" type="text" placeholder="search..." id="searchInput" class="form-control mb-3 mt-3 mb-2 w-25 mx-auto">
+        <div>
+          <table class="table container text-white">
+            <thead>
+              <th>#NO:</th>
+              <th>Name:</th>
+              <th>Category:</th>
+              <th>Price:</th>
+              <th>Description:</th>
+              <th>Update</th>
+              <th>Details</th>
+              <th>Delete</th>
+          </thead>
+          <tbody id="tbody">
+          </tbody>
+          </table>
+        </div>
+      </div>
+        <script src="./js/all.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/myScript.js"> </script>
+    </body>
+</html>
